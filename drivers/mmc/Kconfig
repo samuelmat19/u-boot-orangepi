@@ -48,6 +48,11 @@ config SPL_DM_MMC
 
 if MMC
 
+config MMC_SUNXI_USE_DMA
+	bool "Sunxi use dma"
+	help
+	  Sunxi use dma
+
 config ARM_PL180_MMCI
 	bool "ARM AMBA Multimedia Card Interface and compatible support"
 	depends on DM_MMC && OF_CONTROL
